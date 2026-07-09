@@ -1,0 +1,63 @@
+import { Analytics } from '@vercel/analytics/next'
+import { IBM_Plex_Mono, IBM_Plex_Sans } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import './globals.css'
+import { profile } from '@/lib/portfolio-data'
+import { assetPath } from '@/lib/site-path'
+
+const plexSans = IBM_Plex_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-plex-sans',
+  display: 'swap',
+})
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-plex-mono',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: profile.name,
+  description:
+    "Saee Patil is an incoming Carnegie Mellon M.S. in Machine Learning student working on evaluation, reasoning, robustness, computer vision, and trustworthy AI systems.",
+  icons: {
+    icon: [
+      {
+        url: assetPath('/icon-light-32x32.png'),
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: assetPath('/icon-dark-32x32.png'),
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: assetPath('/icon.svg'),
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: assetPath('/apple-icon.png'),
+  },
+}
+
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: '#ffffff',
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" className={`${plexSans.variable} ${plexMono.variable} bg-background`}>
+      <body className="font-sans antialiased">
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
+      </body>
+    </html>
+  )
+}
