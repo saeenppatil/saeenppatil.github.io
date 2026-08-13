@@ -19,6 +19,8 @@ const plexMono = IBM_Plex_Mono({
   display: 'swap',
 })
 
+const iconVersion = '2026-08-13-2'
+
 export const metadata: Metadata = {
   title: profile.name,
   description:
@@ -26,12 +28,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: assetPath('/sp-icon.svg'),
+        url: assetPath(`/sp-icon.svg?v=${iconVersion}`),
         type: 'image/svg+xml',
       },
     ],
-    shortcut: assetPath('/favicon.ico'),
-    apple: assetPath('/apple-icon.png'),
+    shortcut: assetPath(`/favicon.ico?v=${iconVersion}`),
+    apple: assetPath(`/apple-icon.png?v=${iconVersion}`),
   },
 }
 
