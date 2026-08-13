@@ -26,19 +26,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: assetPath('/icon-light-32x32.png'),
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: assetPath('/icon-dark-32x32.png'),
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
         url: assetPath('/icon.svg'),
         type: 'image/svg+xml',
       },
     ],
-    apple: assetPath('/apple-icon.png'),
   },
 }
 
