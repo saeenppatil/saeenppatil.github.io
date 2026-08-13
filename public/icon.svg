@@ -1,14 +1,14 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="180" height="180" rx="36" fill="#134074" />
-  <path d="M45 126H135" stroke="#8DA9C4" stroke-width="10" stroke-linecap="round" />
+  <rect width="180" height="180" rx="34" fill="#134074" />
+  <rect x="12" y="12" width="156" height="156" rx="26" stroke="#8DA9C4" stroke-width="8" />
   <text
     x="90"
-    y="105"
+    y="116"
     fill="#FFFFFF"
-    font-family="IBM Plex Sans, Arial, sans-serif"
-    font-size="62"
-    font-weight="700"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="78"
+    font-weight="900"
     text-anchor="middle"
-    letter-spacing="1"
+    letter-spacing="0"
   >SP</text>
 </svg>

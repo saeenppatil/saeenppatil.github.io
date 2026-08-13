@@ -19,7 +19,7 @@ const plexMono = IBM_Plex_Mono({
   display: 'swap',
 })
 
-const iconVersion = '2026-08-13-2'
+const iconVersion = '2026-08-13-3'
 
 export const metadata: Metadata = {
   title: profile.name,
