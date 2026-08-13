@@ -26,10 +26,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: assetPath('/icon.svg'),
+        url: assetPath('/sp-icon.svg'),
         type: 'image/svg+xml',
       },
     ],
+    shortcut: assetPath('/favicon.ico'),
+    apple: assetPath('/apple-icon.png'),
   },
 }
 
