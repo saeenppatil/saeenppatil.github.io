@@ -1,17 +1,16 @@
 export const profile = {
   name: "Saee Patil",
-  title: "Incoming MSML Student at Carnegie Mellon University",
-  location: "Davis, CA",
+  title: "M.S. in Machine Learning Student & Researcher at Carnegie Mellon University",
   email: "sppatil@andrew.cmu.edu",
   tagline:
-    "I study evaluation, reasoning, robustness, and interpretability in machine learning systems.",
+    "I study how learning systems reason, evaluate evidence, and remain reliable in high-stakes settings.",
   intro:
-    "I am a machine learning researcher and recent Computer Science graduate from UC Davis, joining Carnegie Mellon's M.S. in Machine Learning program. I am interested in how learning systems reason, adapt, and behave in settings where reliability matters. My work combines research with applied engineering, from developing evaluation methods and studying model robustness to building reproducible tools that make experimental results easier to understand and use.",
+    "I am an M.S. in Machine Learning student at Carnegie Mellon University and a graduate researcher in the A2 Lab, advised by Dr. Akari Asai. My current work focuses on source reliability and post-training for deep research agents, building evaluation and reinforcement-learning methods that help models reason about the authority, recency, and relevance of evidence.",
   researchFocus: [
-    "Reinforcement learning and decision-making",
-    "Model evaluation, reasoning, and robustness",
-    "Trustworthy and interpretable machine learning",
-    "Computer vision and multimodal systems",
+    "Deep research agents and source reliability",
+    "Post-training and reinforcement learning",
+    "Evaluation, reasoning, and robustness",
+    "Trustworthy and interpretable AI",
   ],
   social: {
     github: "https://github.com/saeenppatil",
@@ -26,14 +25,14 @@ export const education = [
   {
     school: "Carnegie Mellon University",
     degree: "M.S. in Machine Learning",
-    period: "Incoming Fall 2026",
-    detail: "School of Computer Science",
+    period: "August 2026 - December 2027",
+    detail: "School of Computer Science · GPA: 4.0",
   },
   {
     school: "University of California, Davis",
     degree: "B.S. in Computer Science",
-    period: "2022 - 2026",
-    detail: "Cumulative GPA: 3.90",
+    period: "September 2022 - June 2026",
+    detail: "GPA: 3.91 · Dean's Honor List (7 terms)",
   },
 ]
 
@@ -57,6 +56,13 @@ export const projects: Project[] = [
     href: "https://github.com/saeenppatil/ML_pedestrian_intent_classification",
     preview: "/project-previews/pedestrian-screenshot.png",
     featured: true,
+  },
+  {
+    title: "VisionXAI",
+    year: "2026",
+    blurb:
+      "Developed an interactive application that connects GRAD-CAM explanations and vision-model predictions to a Next.js interface through REST APIs, with NLP-generated clinical context for model outputs.",
+    tags: ["GRAD-CAM", "SHAP", "TensorFlow", "PyTorch", "Supabase", "Next.js"],
   },
   {
     title: "Multi-Label News Categorization using BERT",
@@ -119,18 +125,18 @@ export const publications: Publication[] = [
   },
   {
     title: "BRIDGE: A Bias Register-Integrated Dataset for Generalized Evaluation of LLM Bias Detection",
-    venue: "NeurIPS 2026",
-    year: "2026",
+    venue: "ICLR 2027",
+    year: "2027",
     authors: "Patil S., et al.",
-    award: "Submitted",
+    award: "Submitted to ICLR 2027",
   },
   {
     title:
       "LLM Capability Is Not a Scalar: Measuring the Shape of Reasoning-Model Behavior with Path Consistency and Sampling Fingerprints",
-    venue: "EMNLP 2026",
-    year: "2026",
+    venue: "NAACL 2027",
+    year: "2027",
     authors: "Bonagiri A., Ogus C., Xayasak V., Patil S., et al.",
-    award: "Submitted",
+    award: "Submitted to NAACL 2027",
   },
 ]
 
@@ -140,16 +146,28 @@ export type Role = {
   period: string
   description: string
   stack: string[]
+  advisor?: string
+  project?: string
 }
 
 export const experience: Role[] = [
   {
+    company: "A2 Lab - Carnegie Mellon University",
+    role: "ML Graduate Research Assistant",
+    period: "September 2026 - Present",
+    advisor: "Dr. Akari Asai",
+    project: "Deep Research Agents: Source Reliability and Post-Training",
+    description:
+      "Developing evaluation benchmarks and reinforcement-learning methods for source-quality reasoning in deep research agents. The work extends citation evaluation beyond factual support to assess claim-specific authority, recency, relevance, and licensing constraints, while using credibility-based rewards and adversarial evidence environments to reduce reliance on outdated or misleading sources.",
+    stack: ["Deep Research Agents", "RL", "Post-Training", "Citation Evaluation"],
+  },
+  {
     company: "Lawrence Livermore National Laboratory",
     role: "Machine Learning Graduate Intern",
-    period: "June 2026 - Present",
+    period: "June 2026 - September 2026",
     description:
-      "Building a multi-agent system for CAD-based 3D simulations, combining GEPA prompt optimization, reinforcement learning, DSPy, and Pydantic AI to support slow-learning control and finite element analysis workflows.",
-    stack: ["RL", "GEPA", "DSPy", "Pydantic AI"],
+      "Designed a multi-agent system for CAD-based 3D simulations, combining GEPA prompt optimization with reinforcement learning for finite-element-analysis workflows. Built specialized agents for closed-loop modeling and improved multi-step reasoning and tool use through post-training methods.",
+    stack: ["GRPO", "GEPA", "DSPy", "Pydantic AI", "TRL", "HPC"],
   },
   {
     company: "Keysight Technologies",
@@ -195,19 +213,15 @@ export const experience: Role[] = [
 
 export const skills = [
   {
-    group: "Modeling",
-    items: ["PyTorch", "TensorFlow", "Hugging Face", "Scikit-Learn", "QLoRA", "GRAD-CAM"],
+    group: "AI & Machine Learning",
+    items: ["PyTorch", "TensorFlow", "Hugging Face", "RAG", "GRPO", "RLHF", "QLoRA", "LangChain"],
   },
   {
     group: "Languages",
     items: ["Python", "C/C++", "Java", "SQL (MySQL)", "JavaScript", "TypeScript", "HTML/CSS"],
   },
   {
-    group: "Software & Infrastructure",
-    items: ["AWS", "Git", "Docker", "MongoDB", "React", "Next.js", "Node.js", "Django", "Flask", "FastAPI"],
-  },
-  {
-    group: "Evaluation & Research",
-    items: ["RAG", "RL", "Captum", "Gurobi", "SLURM", "REST APIs", "Weights & Biases"],
+    group: "Web & Tools",
+    items: ["AWS", "Git", "Docker", "MongoDB", "React", "Next.js", "Node.js", "Django", "Flask", "FastAPI", "REST APIs"],
   },
 ]

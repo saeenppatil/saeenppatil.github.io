@@ -20,6 +20,12 @@ export function Experience() {
             <div>
               <p className="text-sm font-semibold text-primary">{role.company}</p>
               <h3 className="mt-1 font-heading text-xl font-semibold tracking-tight text-foreground">{role.role}</h3>
+              {role.advisor ? (
+                <p className="mt-2 text-sm font-medium text-foreground">Advisor: {role.advisor}</p>
+              ) : null}
+              {role.project ? (
+                <p className="mt-1 text-sm italic leading-6 text-muted-foreground">{role.project}</p>
+              ) : null}
               <p className="mt-3 max-w-3xl text-sm leading-7 text-muted-foreground">{role.description}</p>
               <p className="mt-3 text-xs leading-6 text-foreground/75">
                 {role.stack.join(" · ")}
