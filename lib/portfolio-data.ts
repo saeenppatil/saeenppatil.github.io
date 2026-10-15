@@ -3,14 +3,14 @@ export const profile = {
   title: "M.S. in Machine Learning Student & Researcher at Carnegie Mellon University",
   email: "sppatil@andrew.cmu.edu",
   tagline:
-    "I study how learning systems reason, evaluate evidence, and remain reliable in high-stakes settings.",
+    "I study agentic AI, post-training, and how language models reason, learn, and remain reliable.",
   intro:
-    "I am an M.S. in Machine Learning student at Carnegie Mellon University and a graduate researcher in the A2 Lab, advised by Dr. Akari Asai. My current work focuses on source reliability and post-training for deep research agents, building evaluation and reinforcement-learning methods that help models reason about the authority, recency, and relevance of evidence.",
+    "I am an M.S. student in Machine Learning at Carnegie Mellon University, where I am advised by Dr. Akari Asai. My research interests lie in agentic AI and post-training, with a focus on reinforcement learning, reasoning, and evaluation for language models. More broadly, I am interested in building machine learning systems that are capable, reliable, and interpretable.",
   researchFocus: [
-    "Deep research agents and source reliability",
+    "Agentic AI and language model systems",
     "Post-training and reinforcement learning",
-    "Evaluation, reasoning, and robustness",
-    "Trustworthy and interpretable AI",
+    "Reasoning, evaluation, and robustness",
+    "Trustworthy and interpretable machine learning",
   ],
   social: {
     github: "https://github.com/saeenppatil",

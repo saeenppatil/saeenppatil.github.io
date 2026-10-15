@@ -24,7 +24,7 @@ const iconVersion = '2026-08-13-3'
 export const metadata: Metadata = {
   title: profile.name,
   description:
-    "Saee Patil is a Carnegie Mellon M.S. in Machine Learning student and A2 Lab researcher advised by Dr. Akari Asai, working on deep research agents, source reliability, post-training, and trustworthy AI.",
+    "Saee Patil is a Carnegie Mellon M.S. in Machine Learning student advised by Dr. Akari Asai, with research interests in agentic AI, post-training, language-model reasoning, evaluation, and trustworthy AI.",
   icons: {
     icon: [
       {
