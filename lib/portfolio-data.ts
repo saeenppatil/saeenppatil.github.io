@@ -1,6 +1,6 @@
 export const profile = {
   name: "Saee Patil",
-  title: "M.S. in Machine Learning Student & Researcher at Carnegie Mellon University",
+  title: "M.S. in Machine Learning Student\nResearcher at Carnegie Mellon University",
   email: "sppatil@andrew.cmu.edu",
   tagline:
     "I study agentic AI, post-training, and how language models reason, learn, and remain reliable.",
@@ -26,7 +26,7 @@ export const education = [
     school: "Carnegie Mellon University",
     degree: "M.S. in Machine Learning",
     period: "August 2026 - December 2027",
-    detail: "School of Computer Science · GPA: 4.0",
+    detail: "GPA: 4.0 · MLD, LTI",
   },
   {
     school: "University of California, Davis",

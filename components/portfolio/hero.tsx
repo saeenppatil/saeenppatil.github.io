@@ -30,7 +30,7 @@ export function Hero() {
           <h1 className="max-w-2xl font-heading text-5xl font-semibold leading-none tracking-tight text-balance md:text-6xl">
             {profile.name}
           </h1>
-          <p className="mt-4 max-w-2xl text-base font-medium leading-7 text-primary md:text-lg">
+          <p className="mt-4 max-w-2xl whitespace-pre-line text-base font-medium leading-7 text-primary md:text-lg">
             {profile.title}
           </p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-pretty text-muted-foreground">
